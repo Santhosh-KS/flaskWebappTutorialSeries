@@ -1,0 +1,53 @@
+body {
+  background-color: #9c9f84;
+  margin: 0px;
+  font-family: Verdana, Georgia, serif;
+  font-size: 14px;
+}
+
+/*
+ * Create a div with id=header
+ * */
+#header {
+  background-color: #5c755e;
+  margin: 10px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+/*
+ * Create a div with id=navbar
+ * */
+#navbar {
+  background-color: #5c755e;
+  margin: 10px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/*
+ * Create a div with class=main
+ * */
+.main {
+  background-color: #e5e4d7;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 110%;
+}
+
+h1 {
+  font-size: 120%;
+  color: #ce282e;
+}
+
+/*
+ * Create a div with class=main
+ * */
+
+#footer{
+  background-color: #5c755e;
+  margin: 10px;
+  height: 50px;
+  border-radius: 5px;
+}
