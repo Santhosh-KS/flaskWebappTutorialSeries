@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="This web page is contains MLAI webapp" >
+  <meta name="keywords" content="ML, AI, Webapp">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="author" content="SantMan">
+  <meta http-equiv="content-language" content="en-us">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  {% block head %} {% endblock %}
+</head>
+
+<body>
+  <div id="header">  </div>
+  <div id="navbar">  </div>
+  <div class="main">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+          {% for message in messages %}
+              <!-- Do something with the message -->
+              <div class="alert">
+                  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                  <strong>ERROR: </strong> {{ message }} 
+              </div>
+
+          {% endfor %}
+      {% endif %}
+    {% endwith %}
+    {% block body%} 
+    {% endblock %}
+  </div>
+  <div id="footer">  </div>
+</body>
+
+</html>
