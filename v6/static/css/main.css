@@ -1,0 +1,99 @@
+body {
+  background-color: #9c9f84;
+  margin: 0px;
+  font-family: Verdana, Georgia, serif;
+  font-size: 14px;
+}
+
+/*
+ * Create a div with id=header
+ * */
+#header {
+  background-color: #5c755e;
+  margin: 10px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+/*
+ * Create a div with id=navbar
+ * */
+#navbar {
+  background-color: #5c755e;
+  margin: 10px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/*
+ * Create a div with class=main
+ * */
+.main {
+  background-color: #e5e4d7;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 100%;
+  /*border: 20px solid #ccc;*/
+}
+
+h1 {
+  font-size: 120%;
+  color: #ce282e;
+}
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  border-color: red;
+  border-radius: 5px;
+}
+
+#form {
+  width: 700px;
+  height: auto;
+  margin-left: 350px;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#alert {
+  color: red;
+  margin-left: 380px;
+  margin-right: auto;
+  padding: None;
+  border: None;
+}
+
+#inputImage{
+  width: 800px;
+  height: auto;
+  margin-left: 240px;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+/*
+ * Create a div with class=main
+ * */
+
+#footer{
+  background-color: #5c755e;
+  margin: 10px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+h3 {
+  font-size: 250%;
+  text-align: center;
+  color: #e5e4d7;
+  font-family: "century Gothic", "Gill Sans", Arial;
+
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
