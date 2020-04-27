@@ -49,6 +49,7 @@ def prediction(filename):
     obj.is_predicted = False
     if request.method == 'POST' and filename:
         val = app.config['UPLOADED_PHOTOS_DEST']+filename
+        obj.image = filename
         jf = '.' + url_for('static', filename='data/imagenet_class_index.json')
         print(f'file : {val}, json : {jf}')
         p = predict(val, jf)
