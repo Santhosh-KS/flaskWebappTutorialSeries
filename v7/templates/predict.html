@@ -8,18 +8,19 @@
 
 {% block body %} 
       {% if obj.is_image_display %}
-        <div id="form">
-          <form method=POST enctype=multipart/form-data action="{{ url_for('prediction', filename=obj.image) }}">
-            <input type="submit" value="Predict">
-          </form>
-        </div> 
+        {% if obj.is_predicted %}
+          <div id="prediction"> 
+            <h1> Image has : {{ obj.value }}!! </h1> 
+          </div>
+        {%else %}
+          <div id="form">
+            <form method=POST enctype=multipart/form-data action="{{ url_for('prediction', filename=obj.image) }}">
+              <input type="submit" value="Predict">
+            </form>
+          </div> 
+        {% endif %}
         <div > 
           <img id="inputImage" src={{ url_for('send_file', filename=obj.image) }} alt="User Image">
         </div>
-          {% if obj.is_predicted %}
-            <div id="form"> 
-              <h1> Image has : {{ obj.value }}!! </h1> 
-            </div>
-          {% endif %}
       {% endif %}
 {% endblock %}

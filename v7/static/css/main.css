@@ -49,6 +49,16 @@ h1 {
   border-radius: 5px;
 }
 
+#prediction{
+  width: 700px;
+  height: auto;
+  margin-left: 500px;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
 #form {
   width: 700px;
   height: auto;
