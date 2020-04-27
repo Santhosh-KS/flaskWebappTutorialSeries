@@ -46,6 +46,7 @@ def send_file(filename):
 def prediction(filename):
     obj = DataObj
     obj.is_image_display = False
+    obj.is_predicted = False
     if request.method == 'POST' and filename:
         val = app.config['UPLOADED_PHOTOS_DEST']+filename
         jf = '.' + url_for('static', filename='data/imagenet_class_index.json')
@@ -72,6 +73,7 @@ def upload():
             obj.image = filename
             session["filename"] = filename
             obj.is_image_display = True
+            obj.is_predicted = False
             return render_template('predict.html', obj=obj)
         else:
             if ft.filename:

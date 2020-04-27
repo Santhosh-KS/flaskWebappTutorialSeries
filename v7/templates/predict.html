@@ -12,7 +12,7 @@
           <div id="prediction"> 
             <h1> Image has : {{ obj.value }}!! </h1> 
           </div>
-        {%else %}
+        {% else %}
           <div id="form">
             <form method=POST enctype=multipart/form-data action="{{ url_for('prediction', filename=obj.image) }}">
               <input type="submit" value="Predict">
