@@ -13,7 +13,7 @@
 
 <body>
   <div id="header"> 
-    <h3> testwebapp </h3>
+    <h3> Flask Web App</h3>
   </div>
   <div id="navbar">  </div>
   <div class="main">
@@ -34,7 +34,11 @@
       {% endblock %}
     </div>
   </div>
-  <div id="footer">  </div>
+  {% block footer %}
+  <div id="footer"> 
+    <img src="static/images/opencv-logo-1.png" id="logo" >
+  </div>
+  {% endblock %}
 </body>
 
 </html>

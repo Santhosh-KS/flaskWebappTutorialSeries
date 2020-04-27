@@ -66,6 +66,7 @@ def prediction(filename):
 def upload():
     obj = DataObj
     obj.is_image_display = False
+    obj.image = ""
     if request.method == 'POST' and 'image' in request.files:
         ft = request.files['image']
         if checkFileType(ft.filename):

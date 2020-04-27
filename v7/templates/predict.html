@@ -13,9 +13,9 @@
             <h1> Image has : {{ obj.value }}!! </h1> 
           </div>
         {% else %}
-          <div id="form">
+          <div>
             <form method=POST enctype=multipart/form-data action="{{ url_for('prediction', filename=obj.image) }}">
-              <input type="submit" value="Predict">
+              <input type="submit" value="Classify Image" id="blockButton">
             </form>
           </div> 
         {% endif %}
@@ -24,3 +24,4 @@
         </div>
       {% endif %}
 {% endblock %}
+
