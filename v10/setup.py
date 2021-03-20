@@ -12,7 +12,7 @@ setup(
         'Flask-Uploads==0.2.1',
         'future==0.18.2',
         'itsdangerous==1.1.0',
-        'Jinja2==2.11.2',
+        'Jinja2==2.11.3',
         'MarkupSafe==1.1.1',
         'numpy==1.18.3',
         'Pillow==7.1.1',
