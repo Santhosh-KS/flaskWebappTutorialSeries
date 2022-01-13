@@ -15,7 +15,7 @@ setup(
         'Jinja2==2.11.2',
         'MarkupSafe==1.1.1',
         'numpy==1.18.3',
-        'Pillow==7.1.1',
+        'Pillow==9.0.0',
         'torch==1.5.0',
         'torchvision==0.6.0',
         'visitor==0.1.3',
