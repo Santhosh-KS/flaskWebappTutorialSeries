@@ -14,7 +14,7 @@ setup(
         'itsdangerous==1.1.0',
         'Jinja2==2.11.2',
         'MarkupSafe==1.1.1',
-        'numpy==1.18.3',
+        'numpy==1.22.0',
         'Pillow==7.1.1',
         'torch==1.5.0',
         'torchvision==0.6.0',
